@@ -6,6 +6,7 @@
     <string name="masalahinfrastruktir">Masalah Infrastruktur</string>
     <string name="danlainlain">Dan Lain-Lain</string>
     <string name="btn_cari">Cari</string>
+    <string name="btn_submit">Submit</string>
 
 
 </resources>
