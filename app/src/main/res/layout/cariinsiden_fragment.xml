@@ -1,86 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
     android:paddingTop="20dp">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/text_border"
-        android:layout_centerHorizontal="true"
         android:padding="20dp"
         android:text="BIKEWISE.ORG"
-        android:textSize="35dp"/>
+        android:textSize="35dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Cari Insiden :"
             android:layout_above="@+id/checkbox_tabrakan"
+            android:paddingBottom="25dp"
+            android:paddingTop="150dp"
+            android:textSize="30dp"/>
+        <CheckBox
+            android:id="@+id/checkbox_tabrakan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tabrakan"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
-            android:paddingBottom="40dp"
-            android:textSize="30dp"/>
+            android:onClick="onCheckboxClicked"
+            />
+        <CheckBox
+            android:id="@+id/checkbox_bahaya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkbox_tabrakan"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/bahaya"
+            android:onClick="onCheckboxClicked"
 
-
-    <CheckBox
-        android:id="@+id/checkbox_tabrakan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/tabrakan"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="onCheckboxClicked"
-        />
-    <CheckBox
-        android:id="@+id/checkbox_bahaya"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/checkbox_tabrakan"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:text="@string/bahaya"
-        android:onClick="onCheckboxClicked"
-
-        />
-    <CheckBox
-        android:id="@+id/checkbox_pencurian"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/checkbox_bahaya"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:text="@string/pencurian"
-        android:onClick="onCheckboxClicked"/>
-    <CheckBox
-        android:id="@+id/checkbox_masalahinfrastruktur"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/checkbox_pencurian"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:text="@string/masalahinfrastruktir"
-        android:onClick="onCheckboxClicked"/>
-    <CheckBox
-        android:id="@+id/checkbox_danlainlain"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/checkbox_masalahinfrastruktur"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:text="@string/danlainlain"
-        android:paddingBottom="0dp"
-        android:onClick="onCheckboxClicked"/>
+            />
+        <CheckBox
+            android:id="@+id/checkbox_pencurian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkbox_bahaya"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/pencurian"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox
+            android:id="@+id/checkbox_masalahinfrastruktur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkbox_pencurian"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/masalahinfrastruktir"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox
+            android:id="@+id/checkbox_danlainlain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkbox_masalahinfrastruktur"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/danlainlain"
+            android:paddingBottom="0dp"
+            android:onClick="onCheckboxClicked"/>
+    </LinearLayout>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/checkbox_danlainlain"
-        android:layout_centerInParent="true"
         android:layout_marginTop="90dp"
         android:text="@string/btn_cari" />
 
 
-</RelativeLayout>
+</LinearLayout>
