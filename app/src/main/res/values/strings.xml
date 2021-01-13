@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Peta Kecelakaan Sepeda</string>
+    <string name="tabrakan">Tabrakan</string>
+    <string name="bahaya">Bahaya</string>
+    <string name="pencurian">Pencurian</string>
+    <string name="masalahinfrastruktir">Masalah Infrastruktur</string>
+    <string name="danlainlain">Dan Lain-Lain</string>
+    <string name="btn_cari">Cari</string>
+
+
 </resources>
