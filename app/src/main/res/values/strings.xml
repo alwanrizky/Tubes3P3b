@@ -7,6 +7,9 @@
     <string name="danlainlain">Dan Lain-Lain</string>
     <string name="btn_cari">Cari</string>
     <string name="btn_submit">Submit</string>
+    <string name="btn_mulai">Mulai!</string>
+    <string name="btn_contactus">Contact Us</string>
+    <string name="btn_about">About</string>
 
 
 </resources>
