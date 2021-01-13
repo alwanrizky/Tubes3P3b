@@ -53,7 +53,7 @@
             android:id="@+id/radiobutton_pencurian"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/checkbox_bahaya"
+            android:layout_below="@id/radiobutton_bahaya"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
             android:text="@string/pencurian"
@@ -62,7 +62,7 @@
             android:id="@+id/radiobutton_masalahinfrastruktur"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/checkbox_pencurian"
+            android:layout_below="@id/radiobutton_pencurian"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
             android:text="@string/masalahinfrastruktir"
@@ -71,7 +71,7 @@
             android:id="@+id/radiobutton_danlainlain"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/checkbox_masalahinfrastruktur"
+            android:layout_below="@id/radiobutton_masalahinfrastruktur"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
             android:text="@string/danlainlain"
@@ -82,7 +82,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/checkbox_danlainlain"
+        android:layout_below="@id/radiobutton_danlainlain"
         android:layout_marginTop="90dp"
         android:text="@string/btn_cari" />
 
