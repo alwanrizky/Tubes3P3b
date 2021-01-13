@@ -28,59 +28,59 @@
         android:textSize="15dp"/>
 
 
-    <CheckBox
-        android:id="@+id/checkbox_tabrakan"
+    <RadioButton
+        android:id="@+id/radiobutton_tabrakan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tabrakan"
         android:layout_below="@+id/pilihInsiden"
         android:paddingLeft="10dp"
-        android:onClick="onCheckboxClicked"
+        android:onClick="onRadioButtonClicked"
         />
-    <CheckBox
-        android:id="@+id/checkbox_bahaya"
+    <RadioButton
+        android:id="@+id/radiobutton_bahaya"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/checkbox_tabrakan"
+        android:layout_below="@id/radiobutton_tabrakan"
         android:text="@string/bahaya"
         android:paddingLeft="10dp"
-        android:onClick="onCheckboxClicked"
+        android:onClick="onRadioButtonClicked"
 
         />
-    <CheckBox
-        android:id="@+id/checkbox_pencurian"
+    <RadioButton
+        android:id="@+id/radiobutton_pencurian"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/checkbox_bahaya"
+        android:layout_below="@id/radiobutton_bahaya"
         android:text="@string/pencurian"
         android:paddingLeft="10dp"
-        android:onClick="onCheckboxClicked"/>
+        android:onClick="onRadioButtonClicked"/>
 
-    <CheckBox
-        android:id="@+id/checkbox_masalahinfrastruktur"
+    <RadioButton
+        android:id="@+id/radiobutton_masalahinfrastruktur"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/checkbox_pencurian"
+        android:layout_below="@id/radiobutton_pencurian"
         android:text="@string/masalahinfrastruktir"
         android:paddingLeft="10dp"
-        android:onClick="onCheckboxClicked"/>
+        android:onClick="onRadioButtonClicked"/>
 
-    <CheckBox
-        android:id="@+id/checkbox_danlainlain"
+    <RadioButton
+        android:id="@+id/radiobutton_danlainlain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/checkbox_masalahinfrastruktur"
+        android:layout_below="@id/radiobutton_masalahinfrastruktur"
         android:text="@string/danlainlain"
         android:paddingLeft="10dp"
         android:paddingBottom="0dp"
-        android:onClick="onCheckboxClicked"/>
+        android:onClick="onRadioButtonClicked"/>
 
     <TextView
         android:id="@+id/judulInsiden"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Judul Insiden:"
-        android:layout_below="@+id/checkbox_danlainlain"
+        android:layout_below="@+id/radiobutton_danlainlain"
         android:paddingBottom="20dp"
         android:paddingTop="20dp"
         android:paddingLeft="10dp"
